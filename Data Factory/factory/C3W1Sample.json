@@ -1,0 +1,9 @@
+{
+	"name": "C3W1Sample",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "cbab6dde-4545-47be-b7c9-99cd5e1720b4",
+		"tenantId": "4228fd0f-7ea5-4eb6-aea4-58b74e711fbe"
+	}
+}

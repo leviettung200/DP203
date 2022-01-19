@@ -1,0 +1,22 @@
+{
+	"name": "SourceDataset_h3f",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorageConnection1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Company Login.xlsx",
+				"container": "dataset"
+			},
+			"compression": {
+				"type": "GZip",
+				"level": "Optimal"
+			}
+		}
+	}
+}

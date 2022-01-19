@@ -1,0 +1,17 @@
+{
+	"name": "DestinationDataset_h3f",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorageConnection1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "destination"
+			}
+		}
+	}
+}

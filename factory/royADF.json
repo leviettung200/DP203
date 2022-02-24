@@ -1,0 +1,9 @@
+{
+	"name": "royADF",
+	"location": "eastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "eb96b194-917c-4f39-9b1a-9a35497d7694",
+		"tenantId": "4228fd0f-7ea5-4eb6-aea4-58b74e711fbe"
+	}
+}

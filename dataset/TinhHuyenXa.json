@@ -1,0 +1,54 @@
+{
+	"name": "TinhHuyenXa",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "StorageLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "TinhHuyenXa.xlsx",
+				"container": "input"
+			},
+			"sheetIndex": 0,
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "Tỉnh Thành Phố",
+				"type": "String"
+			},
+			{
+				"name": "Mã TP",
+				"type": "String"
+			},
+			{
+				"name": "Quận Huyện",
+				"type": "String"
+			},
+			{
+				"name": "Mã QH",
+				"type": "String"
+			},
+			{
+				"name": "Phường Xã",
+				"type": "String"
+			},
+			{
+				"name": "Mã PX",
+				"type": "String"
+			},
+			{
+				"name": "Cấp",
+				"type": "String"
+			},
+			{
+				"name": "Tên Tiếng Anh",
+				"type": "String"
+			}
+		]
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"name": "dataflow1",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "TinhHuyenXa",
+						"type": "DatasetReference"
+					},
+					"name": "source1"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "DelimitedText1",
+						"type": "DatasetReference"
+					},
+					"name": "sink1"
+				}
+			],
+			"transformations": [
+				{
+					"name": "filter1"
+				},
+				{
+					"name": "aggregate1"
+				}
+			],
+			"script": "source(output(\n\t\t{Tỉnh Thành Phố} as string,\n\t\t{Mã TP} as string,\n\t\t{Quận Huyện} as string,\n\t\t{Mã QH} as string,\n\t\t{Phường Xã} as string,\n\t\t{Mã PX} as string,\n\t\t{Cấp} as string,\n\t\t{Tên Tiếng Anh} as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false) ~> source1\nsource1 filter({Mã TP}==\"92\") ~> filter1\nfilter1 aggregate({Quận Huyện} = count({Quận Huyện})) ~> aggregate1\naggregate1 sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tumask: 0022,\n\tpreCommands: [],\n\tpostCommands: [],\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> sink1"
+		}
+	}
+}

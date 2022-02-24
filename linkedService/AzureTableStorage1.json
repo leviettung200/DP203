@@ -1,0 +1,12 @@
+{
+	"name": "AzureTableStorage1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureTableStorage",
+		"typeProperties": {
+			"connectionString": "DefaultEndpointsProtocol=https;AccountName=forroyadf;EndpointSuffix=core.windows.net;",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEY2MzY4QkQwLTBERDctNEIyOC1CRTQ4LTE0NDI3NkYzOTU2Ql83N2Q1NzZlNi0yYWNhLTRiY2UtYTA5OS1lY2M4NWE4ZGFmN2YiDQp9"
+		}
+	}
+}
